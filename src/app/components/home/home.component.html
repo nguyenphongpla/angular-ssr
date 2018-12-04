@@ -1,5 +1,7 @@
 <h2>Welcome to home section</h2>
 
-<button (click)="showContentDiv()">show</button>
-<div *ngIf="showContent">Content: Hahahaa</div>
-<p id="q1">holoholo</p>
+<div class="images" *ngFor="let image of imagesList" (deferLoad)="image.show = true">
+  <ng-container *ngIf="image.show">
+    <img src={{image.url}}>
+  </ng-container>
+</div>

@@ -27,6 +27,7 @@
     "@angular/router": "~7.1.0",
     "@nguniversal/express-engine": "^7.0.2",
     "@nguniversal/module-map-ngfactory-loader": "v7.0.2",
+    "@trademe/ng-defer-load": "^2.0.0",
     "core-js": "^2.5.4",
     "express": "^4.15.2",
     "rxjs": "~6.3.3",

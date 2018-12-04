@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
-
+import { DeferLoadModule } from '@trademe/ng-defer-load';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DeferLoadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
