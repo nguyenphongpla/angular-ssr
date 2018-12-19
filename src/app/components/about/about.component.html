@@ -2,6 +2,6 @@
 
 <ul>
   <li *ngFor="let user of users">
-    {{ user.name }} ({{ user.email }})
+    <p #temp> {{ user.name }} ({{ user.email }})</p>
   </li>
 </ul>
